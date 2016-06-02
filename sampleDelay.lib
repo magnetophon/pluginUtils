@@ -1,0 +1,16 @@
+//-----------------------------------------------
+// sample delay
+//-----------------------------------------------
+
+declare name      "sample delay lib";
+declare version   "1.0";
+declare author    "Bart Brouns";
+declare license   "GNU 3.0";
+declare copyright "(c) Bart Brouns 2016";
+
+
+delay = hundreds+tens+ones;
+
+hundreds = hslider("[0]hundreds [tooltip: delay in hundreds samples]", 0, 0, 9, 1)*100;
+tens     = hslider("[1]tens     [tooltip: delay in tens of samples]", 0, 0, 9, 1)*10;
+ones     = hslider("[2]ones     [tooltip: delay in samples]", 0, 0, 9, 1);
