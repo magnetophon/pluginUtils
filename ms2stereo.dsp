@@ -8,4 +8,8 @@ declare author    "Bart Brouns";
 declare license   "GNU 3.0";
 declare copyright "(c) Bart Brouns 2016";
 
-process(m,s) = (m+s),(m-s);
+process(mid, side) = (left, right)
+with {
+  left = (mid + side) * sqrt(0.5);
+  right = (mid - side) * sqrt(0.5);
+};
