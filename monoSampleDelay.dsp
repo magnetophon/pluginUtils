@@ -3,12 +3,11 @@
 //-----------------------------------------------
 
 declare name      "monoSampleDelay";
-declare version   "1.1";
-declare author    "Bart Brouns";
-declare license   "GNU 3.0";
-declare copyright "(c) Bart Brouns 2016";
+declare version "2.0.0";
+declare author "Bart Brouns";
+declare license "GPL-3.0-only";
+declare copyright "2016 - 2023, Bart Brouns";
 
 import("sampleDelay.lib");
-
 
 process(x) = hgroup("delay", x@delay);
